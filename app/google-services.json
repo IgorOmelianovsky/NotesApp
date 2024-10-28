@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "92562296241",
+    "project_id": "p71-notes-real",
+    "storage_bucket": "p71-notes-real.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92562296241:android:f4dd3d37d339516488c190",
+        "android_client_info": {
+          "package_name": "com.example.p71_notes_real"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-QUFWcxaJJMvNz7pb51RvRNod7lgMIks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

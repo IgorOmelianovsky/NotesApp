@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.p71_notes_real.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_createFragment"
+            app:destination="@id/createFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.example.p71_notes_real.ui.fragment.CreateFragment"
+        android:label="fragment_create"
+        tools:layout="@layout/fragment_create" />
+
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.p71_notes_real.ui.fragment.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit">
+
+        <argument
+            android:name="noteModel"
+            app:argType="com.example.p71_notes_real.model.NoteModel"
+            app:nullable="false" />
+
+    </fragment>
+
+</navigation>
